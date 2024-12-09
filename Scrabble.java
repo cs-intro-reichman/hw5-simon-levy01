@@ -112,8 +112,7 @@ public class Scrabble {
 			} else if (MyString.subsetOf(input, hand)){
 				score += wordScore(input);
 				hand = MyString.remove(hand,input);
-				System.out.println(input + " earned " + wordScore(input) + " points. Score: " + score + " points" );
-				System.out.println("");
+				System.out.println(input + " earned " + wordScore(input) + " points. Score: " + score + " points\n" );
 			}
 		}
 		if (hand.length() == 0) {

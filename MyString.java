@@ -71,7 +71,7 @@ public class MyString {
             return spaced;
         }
         for (int i=0; i<str.length()-1; i++){
-            spaced = spaced + str.charAt(i) + " ";
+            spaced += str.charAt(i) + " ";
         }    
         return spaced + str.charAt(str.length()-1);
     }
@@ -89,7 +89,7 @@ public class MyString {
     public static String randomStringOfLetters(int n) {
         String random = "";
         for (int i=0; i<n; i++){
-            random = random + (char)((int)(26*Math.random()+97));
+            random += (char)((int)(26*Math.random()+97));
         }
         return random;
     }
